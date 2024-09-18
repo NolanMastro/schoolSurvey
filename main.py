@@ -1,4 +1,3 @@
-
 import random
 import names
 import random
@@ -65,8 +64,8 @@ def fill_out_survey(num_times):
         email = f"{random_username}@nolanmastro.com"
         driver.find_element(By.XPATH, '/html/body/div[3]/div/form/div/div[2]/div[2]/div[3]/div[1]/div[8]/div[3]/div/fieldset/div/div/input').send_keys(email)
 
-        random_numbers = ''.join(random.choices('0123456789', k=5))
-        student_email = f"5{random_numbers}@my.cuhsd.org"
+        random_numbers = ''.join(random.choices('0123456789', k=4))
+        student_email = f"55{random_numbers}@my.cuhsd.org"
         driver.find_element(By.XPATH, '/html/body/div[3]/div/form/div/div[2]/div[2]/div[3]/div[1]/div[10]/div[3]/div/fieldset/div/div/input').send_keys(student_email)
 
         driver.find_element(By.XPATH, '/html/body/div[3]/div/form/div/div[2]/div[2]/div[3]/div[1]/div[12]/div[3]/div/fieldset/div/div/input').send_keys('Branham High School')
